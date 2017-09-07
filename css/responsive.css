@@ -1,0 +1,98 @@
+@media screen and (max-width: 992px) {
+    #oferta p{
+        width: 80%;
+    }
+    
+    #onas p {
+        font-size: 3vw;
+    }
+    
+        #oferta p {
+        font-size: 3vw;
+    }
+    
+        #misja p {
+        font-size: 3vw;
+    }
+    
+        #wspolpraca p {
+        font-size: 3vw;
+    }
+    
+        #kariera p {
+        font-size: 3vw;
+    }
+    
+        #kontakt p {
+        font-size: 3vw;
+    }
+    h3 {
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    #header {
+        height: 70vw;
+        background-size: 130%;
+    }
+    
+    #img-dzieci {
+        background-size: 130%;
+    }
+    
+    #img-oferta {
+        background-size: 130%;
+    }
+    
+    #img-kariera {
+        background-size: 130%;
+    }
+    h1 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    #header {
+        height: 100vw;
+        background-size: 150%;
+    }
+    
+    #img-dzieci {
+        background-size: 150%;
+    }
+    
+    #img-oferta {
+        background-size: 150%;
+    }
+    
+    #img-kariera {
+        background-size: 150%;
+    }
+    h1 {
+        width: 40%;
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    #mapa {
+        height: 200px;
+    }
+    
+    #dextra-logo {
+        top: 100px;
+    }
+    
+    #formularz {
+        width: 40%;
+    }
+    
+    .napisz {
+        width: 40%;
+    }
+}
