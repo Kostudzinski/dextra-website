@@ -96,7 +96,7 @@
     }
     
     .circle-container {
-        width: 50%;
+        width: 60%;
     }
     
     #formularz input {
@@ -147,5 +147,13 @@
     }
     .logomale-full {
         display: none;
+    }
+    
+    #kontakt p {
+        font-size: 15px;
+    }
+    
+    #kontakt p.mniejsze {
+        font-size: 12px;
     }
 }
