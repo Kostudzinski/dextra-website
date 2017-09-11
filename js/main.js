@@ -9,7 +9,7 @@ $(document).ready(function () {
            zamknij();
 });
 
-$(window).scroll(function() {
+$(window).scroll(function() { 
     changePosition();
 })
                   
@@ -40,7 +40,8 @@ function napiszDoNas() {
     };
 
 function zamknij() {
-    $('#zamknij').click(function() {
+    $('#zamknij').click(function(event) {
+        event.stopPropagation();
         $('#formularz').removeClass("pokaz");
         $('.rozwin').removeClass("niepokaz");
     })

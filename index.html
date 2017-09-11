@@ -36,6 +36,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#onas">O kancelarii</a></li>
                     <li><a href="#misja">Misja</a></li>
+                    <!--
                     <li class="dropdown">
                         <a class="btn-secondary dropdown-toggle" data-toggle="dropdown" href="#oferta">Oferta</a>
                         <ul class="dropdown-menu">
@@ -43,6 +44,19 @@
                             <li><a href="#">Page 1-2</a></li>
                         </ul>
                     </li>
+-->
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                               Oferta
+                               </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#odszkodowawcza">Odszkodowania i Zadośćuczynienia</a>
+                                <a class="dropdown-item" href="#antywindykacja">Antywindykacja</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--                       https://stackoverflow.com/questions/16214326/bootstrap-dropdown-with-hover-->
                     <li><a href="#kariera">Kariera</a></li>
                     <li><a href="#wspolpraca">Współpraca</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
@@ -54,8 +68,10 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!-- form control - bootstrap input-->
+
     <section id="formularz" class="niepokaz">
-        <div class="napisz">Napisz do nas
+        <div class="napisz do-nas">Napisz do nas
             <div id="zamknij">x</div>
         </div>
         <form action="https://formspree.io/biuro@dextracentro.pl" method="POST">
@@ -121,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <p>Strukturę firmy tworzą: <br><br> Prezes kancelarii - absolwent prawa Wydziału Prawa i Administracji Uniwersytetu Jagiellońskiego. Przez wiele lat pracował jako asesor komorniczy, a następnie jako komornik sądowy. Bogate doświadczenie i obszerna wiedza <br>w dziedzinie egzekucji stanowią gwarancję w pełni profesjonalnego i skutecznego prowadzenia w Państwa interesie czynności antywindykacyjnych i przeciwegzekucyjnych. <br><br> Wiceprezes kancelarii - absolwent prawa Wydziału Prawa i Administracji Krakowskiej Akademii. Doświadczenie zdobywał pracując dla kancelarii prawnych w Krakowie zajmując się głównie dochodzeniem odszkodowań dla osób poszkodowanych we wszelkiego rodzaju wypadkach. </p>
+                    <p>Strukturę firmy tworzą: <br><br> Prezes Kancelarii Paweł Dobosz - absolwent prawa Wydziału Prawa i Administracji Uniwersytetu Jagiellońskiego. Przez wiele lat pracował jako asesor komorniczy, a następnie jako komornik sądowy. Bogate doświadczenie i obszerna wiedza <br>w dziedzinie egzekucji stanowią gwarancję w pełni profesjonalnego i skutecznego prowadzenia w Państwa interesie czynności antywindykacyjnych i przeciwegzekucyjnych. <br><br> Wiceprezes Kancelarii Łukasz Cieślik - absolwent prawa Wydziału Prawa i Administracji Krakowskiej Akademii. Doświadczenie zdobywał pracując dla kancelarii prawnych w Krakowie zajmując się głównie dochodzeniem odszkodowań dla osób poszkodowanych we wszelkiego rodzaju wypadkach. </p>
                 </div>
             </div>
         </div>
@@ -147,8 +163,8 @@
         <div id="img-oferta">
         </div>
         <div class="duza-kreska"></div>
-        <div id="odszkodowawcza">
-            <h2>Oferta odszkodowawcza</h2>
+        <div id="odszkodowawcza" class="oferty">
+            <h2>Odszkodowania i Zadośćuczynienia</h2>
             <div class="oferta">
                 <div class="znaczek"></div>
                 <h3>Wypadek komunikacyjny</h3>
@@ -209,8 +225,22 @@
             </div>
         </div>
         <div class="duza-kreska antyw"></div>
-        <div id="antywindykacja">
-            <h2>Oferta antywindykacyjna</h2>
+        <div id="antywindykacja" class="oferty">
+            <h2>Antywindykacja</h2>
+            <div class="oferta">
+                <div class="znaczek"></div>
+                <h3>Darmowa analiza sprawy</h3>
+                <div class="mala-kreska"></div>
+
+                <p>Bezpłatnie zapoznamy się z Twoją sprawą i przeprowadzimy jej analizę prawną. Przedstaw nam swoją sytuację, a my znajdziemy rozwiązanie Twoich problemów.</p>
+            </div>
+            <div class="oferta">
+                <div class="znaczek"></div>
+                <h3>Pełne wsparcie prawne i kompleksowa opieka</h3>
+                <div class="mala-kreska"></div>
+
+                <p>Zajmiemy się Twoim problemem szybko i sprawnie. Załatwimy wszystkie formalności za Ciebie.</p>
+            </div>
             <div class="oferta">
                 <div class="znaczek"></div>
                 <h3>Porady jak ochronić swój majątek</h3>
@@ -220,7 +250,7 @@
             </div>
             <div class="oferta">
                 <div class="znaczek"></div>
-                <h3>Negocjacje z wierzycielami</h3>
+                <h3>Negocjacje i mediacje z wierzycielami</h3>
                 <div class="mala-kreska"></div>
 
                 <p>Wierzyciele nie chcą z Tobą rozmawiać? Nie masz pomysłu jak negocjować spłatę swoich zobowiązań? Poprowadzimy negocjacje w Twoim imieniu.</p>
@@ -230,7 +260,7 @@
                 <h3>Powództwa przeciwegzekucyjne, skargi na czynności komorników, zażalenia na postanowienia sądów w sprawach egzekucyjnych</h3>
                 <div class="mala-kreska"></div>
 
-                <p>Stosujemy skuteczne środki prawne w celu zwalczenia Twojego zadłużenia. Nie pozostawaj bierny ! W prawie każdej sytuacji da się znaleść rozwiązanie ! </p>
+                <p>Stosujemy skuteczne środki prawne w celu zwalczenia Twojego zadłużenia. Nie pozostawaj bierny ! W prawie każdej sytuacji da się znaleźć rozwiązanie ! </p>
             </div>
             <div class="oferta">
                 <div class="znaczek"></div>
@@ -244,7 +274,7 @@
                 <h3>Grozi Ci eksmisja ?</h3>
                 <div class="mala-kreska"></div>
 
-                <p>Nie każda eksmisja oznacza natychmiastową konieczność opuszczenia swojego mieszkania lub domu. My znamy metody skutecznego zwalczania procedur eksmisyjnych ! Zgłoś się do nas, a przeanalizujemy Twoją sprawę i postaramy Ci się pomóc. Niczego nie ryzykujesz, a możesz tylko zyskać ! Warto zawalczyć o miejsce w którym mieszkasz !</p>
+                <p>Nie każda eksmisja oznacza natychmiastową konieczność opuszczenia swojego mieszkania lub domu. My znamy metody skutecznego zwalczania procedur eksmisyjnych ! Zgłoś się do nas, przeanalizujemy Twoją sprawę i postaramy się Tobie pomóc. Niczego nie ryzykujesz, a możesz tylko zyskać ! Warto zawalczyć o miejsce w którym mieszkasz !</p>
             </div>
             <div class="oferta">
                 <div class="znaczek"></div>
@@ -252,6 +282,13 @@
                 <div class="mala-kreska"></div>
 
                 <p>We współpracy z radcami prawnymi przeprowadzamy upadłości konsumenckie. Przedstaw nam swoją sytuację, a my przeprowadzimy kompleksową analizę sprawy.</p>
+            </div>
+            <div class="oferta">
+                <div class="znaczek"></div>
+                <h3>Obsługa i pośrednictwo w zakupie ruchomości i nieruchomości z licytacji komorniczych</h3>
+                <div class="mala-kreska"></div>
+
+                <p>Udzielimy Ci niezbędnych porad dotyczących procedury nabycia ruchomości lub nieruchomości w drodze licytacji. Załatwimy za Ciebie wszystkie formalności.</p>
             </div>
             <div class="p-break">
                 <div class="circle-container">
@@ -297,11 +334,11 @@
         <h1 class="biale">Kontakt</h1>
         <div id="kontakt-kontener">
             <p>Dextra Centro Sp. z o.o.</p>
-            <p>KRS: 0000690890</p>
-            <p>NIP: 5732886684</p>
-            <p>REGON: 368022491</p>
-            <p>Telefony: 790 457 088 / 795 580 039</p>
-            <p>e-mail: biuro@dextracentro.pl</p>
+            <p>Telefon: 790 457 088 / 795 580 039</p>
+            <p>Email: biuro@dextracentro.pl</p>
+            <p class="mniejsze">KRS: 0000690890</p>
+            <p class="mniejsze">NIP: 5732886684</p>
+            <p class="mniejsze">REGON: 368022491</p>
             <p>Adres: 42-217 Częstochowa, ul. Waszyngtona 41/2</p><br><br>
             <div class="mala-kreska biala"></div>
 

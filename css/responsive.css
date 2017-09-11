@@ -52,12 +52,13 @@
     h1 {
         width: 30%;
     }
+
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 786px) {
     
     #header {
-        height: 100vw;
+        height: 100vh;
         background-size: 150%;
     }
     
@@ -94,5 +95,26 @@
     
     .napisz {
         width: 40%;
+    }
+    ul {
+        background-color: white;
+    }
+    .dropdown-toggle {
+    position: relative;
+        bottom: 5px;
+}
+    .napisz, #formularz{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .do-nas {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    #oferta .oferta p {
+        font-size: 14px;
     }
 }
