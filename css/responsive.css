@@ -59,7 +59,7 @@
     
     #header {
         height: 100vh;
-        background-size: 150%;
+        background-size: 250%;
     }
     
     #img-dzieci {
@@ -87,21 +87,38 @@
     
     #dextra-logo {
         top: 100px;
+        background-size: 150%;
     }
     
     #formularz {
         width: 40%;
     }
     
+    #formularz input, textarea {
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
     .napisz {
         width: 40%;
     }
-    ul {
+    
+    .collapse, .navbar-nav, .container-fluid {
         background-color: white;
+    }
+    #nav ul {
+        background-color: white;
+        display: inline;
+        text-align: left;
+    }
+    #nav ul li a {
+        text-align: left;
     }
     .dropdown-toggle {
     position: relative;
-        bottom: 5px;
+        left: 15px;
 }
     .napisz, #formularz{
         left: 0;
@@ -116,5 +133,8 @@
     
     #oferta .oferta p {
         font-size: 14px;
+    }
+    .logomale-full {
+        display: none;
     }
 }
