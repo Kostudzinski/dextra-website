@@ -58,6 +58,7 @@
 @media screen and (max-width: 786px) {
     
     #header {
+        width: 100vw;
         height: 100vh;
         background-size: 250%;
     }
@@ -91,10 +92,20 @@
     }
     
     #formularz {
-        width: 40%;
+        width: 60%;
     }
     
-    #formularz input, textarea {
+    .circle-container {
+        width: 50%;
+    }
+    
+    #formularz input {
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+        #formularz textarea {
         width: 80%;
         left: 0;
         right: 0;
@@ -102,7 +113,7 @@
     }
     
     .napisz {
-        width: 40%;
+        width: 60%;
     }
     
     .collapse, .navbar-nav, .container-fluid {
