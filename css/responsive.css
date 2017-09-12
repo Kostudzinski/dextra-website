@@ -159,4 +159,11 @@
     .logo-kancelarii {
         width: 70%;
     }
+    #social {
+        top: 30%;
+    }
+    
+    #logo-kontakt {
+        background-size: 150%;
+    }
 }
