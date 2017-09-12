@@ -1,6 +1,7 @@
 * {
-font-family: 'Playfair Display', serif;
+font-family: 'Oswald', sans-serif;
 
+font-family: 'Playfair Display', serif;
 }
 
 
@@ -39,6 +40,10 @@ font-family: 'Playfair Display', serif;
 
 .dropdown-menu {
     width: 211px;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
 }
 
 .dropdown-item {
@@ -136,6 +141,7 @@ font-family: 'Playfair Display', serif;
     width: 100%;
     height: 50px;
     background-color: #4F238D;
+    font-family: 'Oswald', sans-serif;
     font-size: 17px;
     color: white;
     text-align: center;
@@ -145,17 +151,21 @@ font-family: 'Playfair Display', serif;
 
 .rozwin {
     position:fixed;
+    font-family: 'Oswald', sans-serif;
     bottom: 0;
     left: 100px;
     text-align: center;
     z-index: 20;
     width: 20%;
-    height: 50px;
+    height: 68px;
     cursor: pointer;
 }
 
-.pokaz {
-    display: block;
+.darmo {
+    font-size: 12px;
+    position: relative;
+    bottom: 30px;
+    font-family: 'Playfair Display', serif;
 }
 
 .input2 {
@@ -173,7 +183,7 @@ font-family: 'Playfair Display', serif;
 /*social media*/
 
 #social {
-    height: 200px;
+    height: 255px;
     width: 50px;
     background-color: rgba(250, 250, 250, 0.6);
     position: fixed;
@@ -193,7 +203,12 @@ font-family: 'Playfair Display', serif;
     margin-top: 20px;
     background-size: 100%;
     background-repeat: no-repeat;
+    transition: 0.5s;
 
+}
+
+.icon:hover {
+    opacity: 0.5;
 }
 
 .fb {
@@ -206,6 +221,34 @@ font-family: 'Playfair Display', serif;
 
 .google {
     background-image: url(../img/google.png);
+}
+
+.phone {
+    background-image: url(../img/phone-icon2.png);
+    cursor: pointer;
+}
+
+.phone-number {
+    background-color: #4F238D;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    position: relative;
+    right: 200px;
+    bottom: 66px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    display: none;
+    transition: 5s;
+
+    
+}
+
+.pokaz {
+    display: block;
 }
 
 /*header*/
@@ -578,4 +621,18 @@ h3 {
 
 .pisz {
     width: 200px;
+}
+
+#gradient-out {
+    width: 100%;
+    height: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(../img/gradient.svg);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
 }

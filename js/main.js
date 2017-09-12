@@ -6,7 +6,9 @@ $(document).ready(function () {
     scrollSlow();
     parallax();
     napiszDoNas();
-           zamknij();
+    zamknij();
+    telefon();
+    dropdownHover()
 });
 
 $(window).scroll(function() { 
@@ -30,6 +32,32 @@ function changePosition() {
 
     }
 }
+};
+
+function dropdownHover() {
+    $('.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+}
+
+function telefon() {
+    $(".phone").click(function(){
+        $('.phone-number').toggle();
+    });
+    
+    $("body").click(function(event){
+        var clickedElement = $(event.target);
+        var isVisible = $(".phone-number").css("display") == "block";
+        
+        if(isVisible && 
+           !clickedElement.hasClass("phone") && 
+           !clickedElement.hasClass("phone-number")){
+            $(".phone-number").hide();
+        }
+    });
+   
 };
 
 function napiszDoNas() {
